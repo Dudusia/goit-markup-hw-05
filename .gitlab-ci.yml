@@ -29,7 +29,7 @@ bootstrap:
     - $CI_PROJECT_DIR/scripts/bootstrap-github.sh
   # Triggers only from main with the key word bootstrap
   rules:
-    - if: '$CI_COMMIT_MESSAGE =~ $CHORE_BOOTSTRAP'
+    - if: '$CI_COMMIT_MESSAGE =~ $CHORE_BOOTSTRAP && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
       when: always
 
 html:vnu:
