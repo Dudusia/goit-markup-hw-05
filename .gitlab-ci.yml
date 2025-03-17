@@ -11,11 +11,6 @@ stages:
   - code:release
   - page:deploy
 
-test:
-  stage: .pre
-  script: 
-    - echo $CI_COMMIT_MESSAGE
-
 variables:
   CHORE_BOOTSTRAP: '/chore: bootstrap/'
 
