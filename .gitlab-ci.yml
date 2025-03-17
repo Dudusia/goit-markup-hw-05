@@ -29,7 +29,7 @@ bootstrap:
     - $CI_PROJECT_DIR/scripts/bootstrap-github.sh
   # Triggers only from main with the key word bootstrap
   rules:
-    - !reference [.chore_rule, rules] && $CI_COMMIT_MESSAGE =~ /\S+ bootstrap$/
+    - $CI_COMMIT_MESSAGE =~ /[[:<:]]chore+/ && $CI_COMMIT_MESSAGE =~ /\S+ bootstrap$/
 
 html:vnu:
   stage: html:validate
