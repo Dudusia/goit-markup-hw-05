@@ -11,11 +11,13 @@ stages:
   - code:release
   - page:deploy
 
+.chore_rule:
+  rules: $CI_COMMIT_MESSAGE =~ /[[:<:]]chore+/
+
 test:
   stage: .pre
   script: 
     - echo $CI_COMMIT_MESSAGE
-    
 
 bootstrap:
   image: alpine:latest
@@ -27,7 +29,7 @@ bootstrap:
     - $CI_PROJECT_DIR/scripts/bootstrap-github.sh
   # Triggers only from main with the key word bootstrap
   rules:
-    - if: '$CI_COMMIT_MESSAGE == "chore: bootstrap"'
+    - !reference [.chore_rule, rules] && $CI_COMMIT_MESSAGE =~ /\S+ bootstrap$/
 
 html:vnu:
   stage: html:validate
