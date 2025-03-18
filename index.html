@@ -602,9 +602,8 @@
         </div>
         <div class="container subscribe-container">
           <p class="subscribe-label-text">Subscribe</p>
-          <label class="subscribe-label" for="user-email">
-          </label>
-          <div class="container email-container">
+          <form class="email-form">
+            <label class="subscribe-label" for="user-email"> </label>
             <input
               class="subscribe-input"
               type="email"
@@ -612,13 +611,13 @@
               id="user-email"
               placeholder="E-mail"
             />
-            <button class="btn subscribe-btn" type="button" data-modal-open>
+            <button class="btn subscribe-btn" type="submit" data-modal-open>
               <span class="subscibe-button-text">Subscribe</span>
               <svg class="subscribe-button-icon" width="24" height="20">
                 <use href="./images/icons.svg#subscribe"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
