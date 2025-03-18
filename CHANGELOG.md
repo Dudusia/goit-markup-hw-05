@@ -1,5 +1,11 @@
 # Changelog ${CI_PROJECT_NAME}
 
+## [1.2.1](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/compare/1.2.0...1.2.1) (2025-03-18)
+
+### Bug Fixes
+
+* form filling ([d2e4fac](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/commit/d2e4fac69bfa0df21523e1c8438db439ed41912a))
+
 ## [1.2.0](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/compare/1.1.0...1.2.0) (2025-03-18)
 
 ### Features
