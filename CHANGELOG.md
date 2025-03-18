@@ -1,5 +1,11 @@
 # Changelog ${CI_PROJECT_NAME}
 
+## [1.2.0](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/compare/1.1.0...1.2.0) (2025-03-18)
+
+### Features
+
+* review comments on footer ([c00f187](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/commit/c00f1878d1e60fe8a684e3053320a927819a8d07))
+
 ## [1.1.0](https://gitlab.com/goit-uni/html-css-fls/goit-markup-hw-05/compare/1.0.0...1.1.0) (2025-03-17)
 
 ### Features
